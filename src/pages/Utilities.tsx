@@ -53,7 +53,7 @@ const Utilities = () => {
             </div>
             <div className="text-right">
               <div className="text-2xl font-bold text-foreground">
-                {totalMonthlyCost.toLocaleString()} ₽
+                {totalMonthlyCost.toLocaleString()} ֏
               </div>
               <div className={cn(
                 'flex items-center justify-end gap-1 text-sm font-medium',
