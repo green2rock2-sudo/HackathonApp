@@ -71,7 +71,7 @@ const Utilities = () => {
 
         {/* Current Meters */}
         <section className="mb-8 animate-slide-in" style={{ animationDelay: '0.1s' }}>
-          <h2 className="text-xl font-semibold mb-6 text-foreground">Ընթացիկ ցուցանիշներh2>
+          <h2 className="text-xl font-semibold mb-6 text-foreground">Ընթացիկ ցուցանիշներ</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <UtilityMeter
               type="gas"
@@ -164,7 +164,7 @@ const Utilities = () => {
                     <span className="text-sm text-muted-foreground">{data.month}</span>
                     <div className="text-right">
                       <div className="font-medium text-foreground">{data.value} կՎտ/ժ</div>
-                      <div className="text-xs text-muted-foreground">{data.cost.toLocaleString()} <֏/div>
+                      <div className="text-xs text-muted-foreground">{data.cost.toLocaleString()} ֏ </div>
                     </div>
                   </div>
                 ))}
