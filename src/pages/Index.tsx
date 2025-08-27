@@ -64,7 +64,7 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-foreground">Խելացի Տուն</h1>
-                <p className="text-sm text-muted-foreground">Կառավարման և մոնիթորինգի համակարգ<</p>
+                <p className="text-sm text-muted-foreground">Կառավարման և մոնիթորինգի համակարգ</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
