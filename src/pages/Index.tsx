@@ -94,15 +94,6 @@ const Index = () => {
             variant={mainDoorOpen ? 'success' : 'default'}
             icon={mainDoorOpen ? <DoorOpen className="w-5 h-5" /> : <DoorClosed className="w-5 h-5" />}
           />
-{/*           <SmartHomeToggle
-            label="Главная дверь"
-            description="Контроль входной двери"
-            checked={mainDoorOpen}
-            onCheckedChange={setMainDoorOpen}
-            variant={mainDoorOpen ? 'success' : 'default'}
-            icon={mainDoorOpen ? <DoorOpen className="w-5 h-5" /> : <DoorClosed className="w-5 h-5" />}
-          />
-        </section> */}
         {/* Windows Status */}
         <section className="animate-slide-in" style={{ animationDelay: '0.1s' }}>
           <h2 className="text-lg font-semibold mb-4 text-foreground">Պատուհանների կարգավիճա</h2>
