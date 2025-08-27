@@ -8,20 +8,20 @@ export const Navigation: React.FC = () => {
     {
       to: '/',
       icon: Home,
-      label: 'Главная',
-      description: 'Основные системы'
+      label: 'Գլխավոր',
+      description: 'Հիմնական համակարգեր'
     },
     {
       to: '/utilities',
       icon: Gauge,
-      label: 'Счётчики',
-      description: 'Газ, вода, электричество'
+      label: 'Հաշվիչներ',
+      description: 'Գազ, Ջուր, Հոսանք'
     },
     {
       to: '/parking',
       icon: MapPin,
-      label: 'Парковка',
-      description: 'Карта парковочных мест'
+      label: 'Ավտոկայան',
+      description: 'Ավտոկայանատեղիի քարտեզ'
     }
   ];
 
