@@ -77,7 +77,7 @@ const Utilities = () => {
               type="gas"
               currentValue={1547}
               previousValue={1523}
-              unit="м³"
+              unit="մ³"
               icon={<Flame className="w-5 h-5" />}
               cost={2340}
             />
@@ -85,7 +85,7 @@ const Utilities = () => {
               type="water"
               currentValue={89}
               previousValue={86}
-              unit="м³"
+              unit="մ³"
               icon={<Droplets className="w-5 h-5" />}
               cost={1200}
             />
@@ -93,7 +93,7 @@ const Utilities = () => {
               type="electricity"
               currentValue={2847}
               previousValue={2821}
-              unit="кВт⋅ч"
+              unit="կՎտ/ժ"
               icon={<Zap className="w-5 h-5" />}
               cost={3150}
             />
