@@ -112,10 +112,10 @@ const Index = () => {
             {Object.entries(windows).map(([room, isOpen]) => (
               <StatusIndicator
                 key={room}
-                //label={room === 'living' ? 'Гостиная' : 
-                //     room === 'kitchen' ? 'Кухня' : 
-                  //     room === 'bedroom' ? 'Спальня' : 'Ванная'}
-                //value={isOpen ? 'Открыто' : 'Закрыто'}
+{/*                 label={room === 'living' ? 'Гостиная' : 
+                     room === 'kitchen' ? 'Кухня' : 
+                       room === 'bedroom' ? 'Спальня' : 'Ванная'}
+                value={isOpen ? 'Открыто' : 'Закрыто'} */}
                 label={room === 'living' ? 'Հյուրասենյակ' : 
                         room === 'kitchen' ? 'Խոհանոց' : 
                         room === 'bedroom' ? 'նՆջասենյակ' : 'Լոգարան'}
@@ -135,12 +135,12 @@ const Index = () => {
             {Object.entries(lights).map(([room, isOn]) => (
               <SmartHomeToggle
                 key={room}
-                //label={room === 'living' ? 'Гостиная' : 
-                  //     room === 'kitchen' ? 'Кухня' : 
-                    //   room === 'bedroom' ? 'Спальня' : 
-                      // room === 'bathroom' ? 'Ванная' : 'Прихожая'}
-                //description={`Освещение ${isOn ? 'включено' : 'выключено'}`}
-                
+{/*                 label={room === 'living' ? 'Гостиная' : 
+                       room === 'kitchen' ? 'Кухня' : 
+                       room === 'bedroom' ? 'Спальня' : 
+                       room === 'bathroom' ? 'Ванная' : 'Прихожая'}
+                description={`Освещение ${isOn ? 'включено' : 'выключено'}`}
+                 */}
                 label={room === 'living' ? 'Հյուրասենյակ' : 
                          room === 'kitchen' ? 'Խոհանոց' : 
                          room === 'bedroom' ? 'Ննջասենյակ' : 
