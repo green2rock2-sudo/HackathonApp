@@ -86,16 +86,25 @@ const Index = () => {
         {/* Main Door Control */}
         <section className="animate-slide-in">
           <h2 className="text-lg font-semibold mb-4 text-foreground">Մուտքի կառավարում<h2>
-          <SmartHomeToggle
+{/*           <SmartHomeToggle
             label="Գլխավոր Դուռ"
             description="Մուտքի դռան վերահսկում"
             checked={mainDoorOpen}
             onCheckedChange={setMainDoorOpen}
             variant={mainDoorOpen ? 'success' : 'default'}
             icon={mainDoorOpen ? <DoorOpen className="w-5 h-5" /> : <DoorClosed className="w-5 h-5" />}
+          /> 
+        </section>
+        */}
+          <SmartHomeToggle
+            label="Главная дверь"
+            description="Контроль входной двери"
+            checked={mainDoorOpen}
+            onCheckedChange={setMainDoorOpen}
+            variant={mainDoorOpen ? 'success' : 'default'}
+            icon={mainDoorOpen ? <DoorOpen className="w-5 h-5" /> : <DoorClosed className="w-5 h-5" />}
           />
         </section>
-
         {/* Windows Status */}
         <section className="animate-slide-in" style={{ animationDelay: '0.1s' }}>
           <h2 className="text-lg font-semibold mb-4 text-foreground">Состояние окон</h2>
@@ -153,10 +162,10 @@ const Index = () => {
             {Object.entries(waterSystems).map(([system, isOn]) => (
               <SmartHomeToggle
                 key={system}
-                //label={system === 'main' ? 'Основная подача' : 
-                  //     system === 'hot' ? 'Горячая вода' : 
-                    //   system === 'cold' ? 'Холодная вода' : 'Полив'}
-                //description={`${isOn ? 'Активна' : 'Отключена'}`}
+{/*                 label={system === 'main' ? 'Основная подача' : 
+                      system === 'hot' ? 'Горячая вода' : 
+                      system === 'cold' ? 'Холодная вода' : 'Полив'}
+                description={`${isOn ? 'Активна' : 'Отключена'}`} */}
                 label={system === 'main' ? 'Հիմնական մատակարարում' : 
                        system === 'hot' ? 'Տաք ջուր' : 
                        system === 'cold' ? 'Սառը ջուր' : 'Ոռոգում'}
