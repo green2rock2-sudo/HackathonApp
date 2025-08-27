@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 
 const Index = () => {
+  // State for doors and windows
+  const [mainDoorOpen, setMainDoorOpen] = useState(false);
+
   // State for lighting
   const [lights, setLights] = useState({
     living: true,
@@ -29,8 +32,6 @@ const Index = () => {
     cold: true,
     irrigation: false
   });
-
-
 
   const handleLightToggle = (room: string) => {
     setLights(prev => ({ ...prev, [room]: !prev[room as keyof typeof prev] }));
@@ -73,7 +74,7 @@ const Index = () => {
       <div className="container mx-auto px-6 py-8 space-y-8">
         {/* Main Door Control */}
         <section className="animate-slide-in">
-        <h2 className="text-lg font-semibold mb-4 text-foreground">Մուտքի կառավարում</h2>
+          <h2 className="text-lg font-semibold mb-4 text-foreground">Մուտքի կառավարում</h2>
           <SmartHomeToggle
             label="Գլխավոր Դուռ"
             description="Մուտքի դռան կառավարում"
@@ -124,7 +125,6 @@ const Index = () => {
             ))}
           </div>
         </section>
-
       </div>
     </div>
   );
