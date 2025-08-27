@@ -31,7 +31,7 @@ const Utilities = () => {
       { month: 'Մայ', value: 201, cost: 2410 },
       { month: 'Հնս', value: 223, cost: 2680 }
     ]
-
+  };
   const totalMonthlyCost = monthlyData.gas[5].cost + monthlyData.water[5].cost + monthlyData.electricity[5].cost;
   const previousMonthlyCost = monthlyData.gas[4].cost + monthlyData.water[4].cost + monthlyData.electricity[4].cost;
   const costDifference = totalMonthlyCost - previousMonthlyCost;
