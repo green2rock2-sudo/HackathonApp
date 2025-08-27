@@ -97,7 +97,7 @@ const Index = () => {
         </section>
         {/* Windows Status */}
         <section className="animate-slide-in" style={{ animationDelay: '0.1s' }}>
-          <h2 className="text-lg font-semibold mb-4 text-foreground">Պատուհանների կարգավիճա</h2>
+          <h2 className="text-lg font-semibold mb-4 text-foreground">Պատուհանների sdaa</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {Object.entries(windows).map(([room, isOpen]) => (
               <StatusIndicator
