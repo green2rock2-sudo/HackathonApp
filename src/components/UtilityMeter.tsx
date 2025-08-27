@@ -19,7 +19,7 @@ export const UtilityMeter: React.FC<UtilityMeterProps> = ({
   unit,
   icon,
   cost,
-  currency = '₽'
+  currency = '֏'
 }) => {
   const difference = currentValue - previousValue;
   const percentageChange = previousValue > 0 ? (difference / previousValue) * 100 : 0;
@@ -41,11 +41,11 @@ export const UtilityMeter: React.FC<UtilityMeterProps> = ({
   const getTypeName = () => {
     switch (type) {
       case 'gas':
-        return 'Газ';
+        return 'Գազ';
       case 'water':
-        return 'Вода';
+        return 'Ջուր';
       case 'electricity':
-        return 'Электричество';
+        return 'Հոսանք';
       default:
         return '';
     }
@@ -53,14 +53,14 @@ export const UtilityMeter: React.FC<UtilityMeterProps> = ({
 
   return (
     <div className="bg-card border border-border rounded-xl p-6 hover:shadow-card transition-all duration-300">
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-etween mb-4">
         <div className="flex items-center gap-3">
           <div className={cn('p-2 rounded-lg bg-muted/20', getTypeColor())}>
             {icon}
           </div>
           <div>
             <h3 className="font-semibold text-foreground">{getTypeName()}</h3>
-            <div className="text-sm text-muted-foreground">Текущие показания</div>
+            <div className="text-sm text-muted-foreground">Ընթացիկ ցուցանիշներ</div>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ export const UtilityMeter: React.FC<UtilityMeterProps> = ({
 
         <div className="flex items-center justify-between text-sm">
           <div className="text-muted-foreground">
-            Предыдущие: {previousValue.toLocaleString()} {unit}
+            Նախորդ: {previousValue.toLocaleString()} {unit}
           </div>
           <div className={cn(
             'flex items-center gap-1 font-medium',
@@ -90,7 +90,7 @@ export const UtilityMeter: React.FC<UtilityMeterProps> = ({
         {cost && (
           <div className="pt-2 border-t border-border">
             <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">К доплате:</span>
+              <span className="text-sm text-muted-foreground">եՆթակա է վճարման:</span>
               <span className="font-semibold text-foreground">
                 {cost.toLocaleString()} {currency}
               </span>
