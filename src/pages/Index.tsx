@@ -161,4 +161,3 @@ const Index = () => {
 };
 
 export default Index;
-լսի պատուհանների կարգավիճակը հանի
