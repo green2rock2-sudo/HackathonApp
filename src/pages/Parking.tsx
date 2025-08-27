@@ -13,8 +13,8 @@ const Parking = () => {
       for (let col = 0; col < 8; col++) {
         spots.push({
           id: spotNumber.toString(),
-          x: 6 + (col * 15), // 6% start + 11% spacing
-          y: 15 + (row * 20), // 15% start + 20% spacing
+          x: 10 + (col * 15), // 6% start + 11% spacing
+          y: 40 + (row * 45), // 15% start + 20% spacing
           occupied: Math.random() > 0.6, // Random occupation
           spotNumber: spotNumber
         });
