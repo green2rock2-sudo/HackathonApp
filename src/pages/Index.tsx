@@ -13,15 +13,6 @@ import {
 } from 'lucide-react';
 
 const Index = () => {
-  // State for doors and windows
-  const [mainDoorOpen, setMainDoorOpen] = useState(false);
-  const [windows, setWindows] = useState({
-    living: false,
-    kitchen: true,
-    bedroom: false,
-    bathroom: false
-  });
-
   // State for lighting
   const [lights, setLights] = useState({
     living: true,
@@ -40,9 +31,6 @@ const Index = () => {
   });
 
 
-  const handleWindowToggle = (room: string) => {
-    setWindows(prev => ({ ...prev, [room]: !prev[room as keyof typeof prev] }));
-  };
 
   const handleLightToggle = (room: string) => {
     setLights(prev => ({ ...prev, [room]: !prev[room as keyof typeof prev] }));
@@ -94,24 +82,6 @@ const Index = () => {
             variant={mainDoorOpen ? 'success' : 'default'}
             icon={mainDoorOpen ? <DoorOpen className="w-5 h-5" /> : <DoorClosed className="w-5 h-5" />}
           />
-        </section>
-        {/* Windows Status */}
-        <section className="animate-slide-in" style={{ animationDelay: '0.1s' }}>
-          <h2 className="text-lg font-semibold mb-4 text-foreground">Պատուհանների կարգավիճա</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {Object.entries(windows).map(([room, isOpen]) => (
-              <StatusIndicator
-                key={room}
-                label={room === 'living' ? 'Հյուրասենյակ' : 
-                        room === 'kitchen' ? 'Խոհանոց' : 
-                        room === 'bedroom' ? 'նՆջասենյակ' : 'Լոգարան'}
-                value={isOpen ? 'Բաց է' : 'Փակ է'}
-
-                status={isOpen ? 'warning' : 'active'}
-                icon={<DoorOpen className="w-4 h-4" />}
-              />
-            ))}
-          </div>
         </section>
 
         {/* Lighting Control */}
