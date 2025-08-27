@@ -7,14 +7,14 @@ import { cn } from '@/lib/utils';
 const Utilities = () => {
   // Mock data for monthly consumption
   const monthlyData = {
-    gas: [ [
+    gas: [
       { month: 'Հնվ', value: 145, cost: 2100 },
       { month: 'Փտվ', value: 156, cost: 2280 },
       { month: 'Մրտ', value: 134, cost: 1950 },
       { month: 'Ապր', value: 128, cost: 1840 },
       { month: 'Մայ', value: 89, cost: 1290 },
       { month: 'Հնս', value: 67, cost: 970 }
-      ],
+    ],
     water: [
       { month: 'Հնվ', value: 12, cost: 850 },
       { month: 'Փտվ', value: 14, cost: 980 },
@@ -22,7 +22,7 @@ const Utilities = () => {
       { month: 'Ապր', value: 13, cost: 910 },
       { month: 'Մայ', value: 15, cost: 1050 },
       { month: 'Հնս', value: 16, cost: 1120 }
-      ],
+    ],
     electricity: [
       { month: 'Հնվ', value: 234, cost: 2800 },
       { month: 'Փտվ', value: 267, cost: 3200 },
@@ -30,32 +30,7 @@ const Utilities = () => {
       { month: 'Ապր', value: 189, cost: 2270 },
       { month: 'Մայ', value: 201, cost: 2410 },
       { month: 'Հնս', value: 223, cost: 2680 }
-      ]
-      /*{ month: 'Янв', value: 145, cost: 2100 },
-      { month: 'Фев', value: 156, cost: 2280 },
-      { month: 'Мар', value: 134, cost: 1950 },
-      { month: 'Апр', value: 128, cost: 1840 },
-      { month: 'Май', value: 89, cost: 1290 },
-      { month: 'Июн', value: 67, cost: 970 }
-    ],
-    water: [
-      { month: 'Янв', value: 12, cost: 850 },
-      { month: 'Фев', value: 14, cost: 980 },
-      { month: 'Мар', value: 11, cost: 770 },
-      { month: 'Апр', value: 13, cost: 910 },
-      { month: 'Май', value: 15, cost: 1050 },
-      { month: 'Июн', value: 16, cost: 1120 }
-    ],
-    electricity: [
-      { month: 'Янв', value: 234, cost: 2800 },
-      { month: 'Фев', value: 267, cost: 3200 },
-      { month: 'Мар', value: 198, cost: 2380 },
-      { month: 'Апр', value: 189, cost: 2270 },
-      { month: 'Май', value: 201, cost: 2410 },
-      { month: 'Июн', value: 223, cost: 2680 }
     ]
-  };
-  */
 
   const totalMonthlyCost = monthlyData.gas[5].cost + monthlyData.water[5].cost + monthlyData.electricity[5].cost;
   const previousMonthlyCost = monthlyData.gas[4].cost + monthlyData.water[4].cost + monthlyData.electricity[4].cost;
