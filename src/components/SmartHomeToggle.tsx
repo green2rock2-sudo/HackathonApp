@@ -68,7 +68,7 @@ export const SmartHomeToggle: React.FC<SmartHomeToggleProps> = ({
             <div className="font-medium text-foreground">{label}</div>
             {description && (
               <div className="text-sm text-muted-foreground">{description}</div>
-            )}Ո
+            )}
           </div>
         </div>
         <div className="flex items-center gap-3">
